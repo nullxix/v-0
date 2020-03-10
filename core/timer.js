@@ -6,7 +6,7 @@ const mInSecond = 1000
 //sL = startingLine
 const sLArgs = [2020, 2, 12, 14]//Year / Month / Day / Hour
 const sLTest  = [2020, 2, 6, 12, 30]
-const sLRAW = Date.UTC(...sLTest)
+const sLRAW = Date.UTC(...sLArgs)
 
 const offset = process.env.LOCAL_TIME_OFFSET
 const startingLine = sLRAW + (mInHour * Number(offset))
